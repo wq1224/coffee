@@ -462,15 +462,15 @@ margin-right:26%;
 {
 	text-align:center;
 	color:#676767;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Microsoft YaHei';
 	letter-spacing:2px;
-	font-size:45px;
+	font-size:26px;
 	margin: 10% 0;
 }
 .content-about small
 {
-	color:#9F449B;
-	font-size:45px;
+	color:#f7941d;
+	font-size:36px;
 }
 .content-about span
 {
@@ -504,28 +504,28 @@ padding-left:31px;
 }
 .learn a
 {
-	background: #A957A5;
-	border-bottom: solid 5px #6B2E68;
+	background: #f7941d;
+	border-bottom: solid 5px #C96F07;
 	border-radius: 7px;
 	padding:1em 3em;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Microsoft YaHei';
 	font-size: 20px;
 	color:#FFFFFF;
 }
 .learn a:hover
 {
-	color:#6B2E68;
+	color:#f7941d;
 	text-decoration:none;
 	background: transparent;
-	border: solid 2px #6B2E68;
-	border-top: solid 5px #6B2E68;
+	border: solid 2px #f7941d;
+	border-top: solid 5px #f7941d;
 	border-radius: 10px;
 	padding:1em 3em;
 }
 .content-about-bottom
 {
-	background:url(../images/quotebg.png) no-repeat 0px 0px;
+	background:url(../images/quotebg.jpg) no-repeat 0px 0px;
 	background-size:cover;
 }
 .content-about-bottom-text
@@ -1056,7 +1056,7 @@ div#portfoliolist {
 	width: 100%;
 	position: absolute;
 	background: rgba(86, 93, 103, 0.48);
-	height: 87.17%;
+	height: 84%;
 	text-align: center;
 }
 .tour-caption span{
@@ -1150,12 +1150,12 @@ h6.b-animate.b-from-left.b-delay03
 	color: #676767;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 2px;
-	font-size: 45px;
+	font-size: 36px;
 }
 .port-text small 
 {
-	color: #9F449B;
-	font-size: 45px;
+	color: #f7941d;
+	font-size: 36px;
 }
 .port-text span.folio
 {
@@ -1253,23 +1253,23 @@ h6.b-animate.b-from-left.b-delay03
 }
 .watch a
 {
-	background: #A957A5;
+	background: #f7941d;
 	border: solid 2px #FFFFFF;
 	border-radius: 10px;
 	padding: 7% 15%;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Microsoft YaHei';
 	font-size: 16px;
 	color:#FFFFFF;
 }
 .watch:hover a
 {
-	color: #A957A5;
+	color: #f7941d;
 	text-decoration:none;
 }
 .watch a:hover
 {
-	border: solid 2px #9F449B;
+	border: solid 2px #f7941d;
 	background:#FFFFFF;
 	transition:0.3s all;
 	-webkit-transition:0.3s all;
@@ -1310,21 +1310,21 @@ text-align:center;
 margin-top: 5em;
 }
 .watchmore a{
-	background: #A957A5;
-	border-bottom: solid 5px #6B2E68;
+	background: #f7941d;
+	border-bottom: solid 5px #C96F07;
 	border-radius: 10px;
 	padding:1em 3em;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Microsoft YaHei';
 	font-size: 20px;
 	color: rgba(255, 255, 255, 1);
 }
 .watchmore a:hover{
-	color:#6B2E68;
+	color:#f7941d;
 	text-decoration:none;
 	background: transparent;
-	border: solid 2px #6B2E68;
-	border-top: solid 5px #6B2E68;
+	border: solid 2px #f7941d;
+	border-top: solid 5px #f7941d;
 	border-radius: 10px;
 	padding:1em 3em;
 }
