@@ -1,49 +1,492 @@
-<!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<div class="content-test" id="test"> 
-				<div class="container">
-				<!---start-da-slider----->
-			<link rel="stylesheet" type="text/css" href="css/slider.css" />
-			<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-			<script type="text/javascript" src="js/jquery.cslider.js"></script>
-			<script type="text/javascript">
-				$(function() {
-				
-					$('#da-slider').cslider({
-						autoplay	: true,
-						bgincrement	: 450
-					});
-				
+		<title>Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!------ js ------>
+		<script src="js/jquery.min.js">
+		</script>
+		<!------ js ------>
+		<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
-			</script>
-				<div id="da-slider" class="da-slider">
-				<div class="da-slide">
-					<h2>This is a main heading</h2>
-					<p>Lorem ipsum is simply dummy text of the printing</p>
-					<a href="#" class="da-link">Learn more</a>
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		<!--- fonts --->
+		<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,300italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+		<!--- fonts --->
+	</head>
+
+	<body>
+		<!--- header-top ---->
+		<div id="home" class="header-top">
+			<!--- container ---->
+			<div class="container">
+				<div class="header-logo">
+					<a href="#"><h1>一杯咖啡</h1></a>
 				</div>
-				<div class="da-slide">
-					<h2>This is a main heading</h2>
-					<p>Lorem ipsum is simply dummy text of the printing</p>
-					<a href="#" class="da-link">Learn more</a>
+				<div class="header-sub-text">
+					<h2>公益心理机构</h2>
+					<p>一杯咖啡公益心理团队：一群获得国家二级心理咨询师资质的老师发起的公益性质的心理专业团队。
+						<br/>我们的宗旨是运用心理咨询师的专长，让所有参加者能够仅仅花费“一杯咖啡”的价钱，解决困惑个人的问题，获得正能量，推动他们主动改变生活。</p>
 				</div>
-				<div class="da-slide">
-					<h2>This is a main heading</h2>
-					<p>Lorem ipsum is simply dummy text of the printing</p>
-					<a href="#" class="da-link">Learn more</a>
+				<div class="header-top-grids">
+					<div class="col-md-4 about-nav4">
+						<a class="scroll" href="#about"><span class="nav-icon4"> </span><label>心理咨询</label></a>
+					</div>
+					<div class="col-md-4 about-nav5">
+						<a class="scroll" href="#portfolio"><span class="nav-icon5"> </span><label>咖啡相遇</label></a>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<nav class="da-arrows">
-					<span class="da-arrows-prev"></span>
-					<span class="da-arrows-next"></span>
+				<div class="header-bottom-grids">
+					<div class="col-md-6 left-grid text-left">
+						<div class="about-nav">
+							<a class="scroll" href="#about"><span class="nav-icon"> </span><label>心灵聚会</label></a>
+						</div>
+						<div class="about-nav1">
+							<a class="scroll" href="#team"><span class="nav-icon1"> </span><label>心灵师成长</label></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 right-grid text-right">
+						<div class="about-nav2">
+							<a class="scroll" href="#portfolio"><span class="nav-icon2"> </span><label>活动报名</label></a>
+						</div>
+						<div class="about-nav3">
+							<a class="scroll" href="#contact"><span class="nav-icon3"> </span><label>联系我们</label></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="arrow-grid">
+					<div class="arrow">
+						<a class="scroll" href="#header-nav"><span> </span></a>
+					</div>
+				</div>
+			</div>
+			<!--- container ---->
+		</div>
+		<!--- //header-top ---->
+		<!--- header-bottom ---->
+		<!-- Sticky Nav --->
+		<div id="header-nav" class="header-nav">
+			<div class="top-nav">
+				<nav>
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo2.png" alt="" />
+						</a>
+					</div>
+					<span class="menu"></span>
+					<ul>
+						<li class="active"><a class="scroll" href="#home">首页</a>
+						</li>
+						<li><a class="scroll" href="#about">心理咨询</a>
+						</li>
+						<li><a class="scroll" href="#team">咖啡相遇</a>
+						</li>
+						<li><a class="scroll" href="#services">心灵聚会</a>
+						</li>
+						<li><a class="scroll" href="#portfolio">心灵师成长</a>
+						</li>
+						<li><a class="scroll" href="#portfolio">咖啡播报</a>
+						</li>
+						<li class="contact"><a class="scroll" href="#contact">联系我们</a>
+						</li>
+						<div class="clearfix"> </div>
+					</ul>
 				</nav>
 			</div>
-				<!---//End-da-slider----->
+			<!--script-nav-->
+			<script>
+				$("span.menu").click(function(){
+				 $(".top-nav ul").slideToggle("slow" , function(){
+				 });
+				 });
+			</script>
+			<!--script-nav-->
+			<script src="js/myscript.js">
+			</script>
+		</div>
+		<!-- top-nav -->
+		<!-- Sticky Nav --->
+
+		<!--- content-services ---->
+		<div id="blog" class="content-services">
+			<!--- container ---->
+			<div class="container">
+				<!-- requried-jsfiles-for owl -->
+				<link href="css/owl.carousel.css" rel="stylesheet">
+				<script src="js/owl.carousel.js"></script>
+				<script>
+					$(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+				</script>
+				<!-- //requried-jsfiles-for owl -->
+				<div id="owl-demo" class="owl-carousel">
+					<div class="item">
+						<img src="images/bg3.jpg">
+					</div>
+					<div class="item">
+						<img src="images/bg4.jpg">
+					</div>
+				</div>
 			</div>
-</div>
+			<!--- container ---->
+		</div>
+		<!--- content-services ---->
+
+		<!--- content-about ---->
+		<div id="about" class="content-about">
+			<!--- container ---->
+			<div class="container">
+				<div class="content-about-text">
+					<h2>一杯咖啡<small>换</small>一次心理咨询</h2>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 content-about-grid-right">
+						<p>
+在很多人眼中，心理咨询很神秘，当然收费也很比较昂贵。为了打破心理咨询的神秘面纱，也为了让更多有需求但是面对高昂收费犹疑不决的人们能够感受到心理咨询 的魅力，由沪上知名心理咨询师团队发起了#一杯咖啡换一次心理咨询#公益活动。每周咨询师老师们拨出一些时间，给到有需要的朋友。
+参加者主要是在上海的朋友，也有个别全国慕名而来的朋友，甚至也有过境上海的国际华人。通过线下面对面的交流，他们诉说自己的故事，寻找内心的正能量，更好地面对生活。
+						</p>
+						<div class="learn">
+							<a href="#">了解更多</a>
+						</div>
+						
+					</div>
+					<div class="col-md-6 content-about-grid-left">
+						<img src="images/zixun3.jpg">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--- content-about ---->
+		<!--- content-about ---->
+		<div id="team" class="content-about grey-bg">
+			<!--- container ---->
+			<div class="container">
+				<div class="content-about-text">
+					<h2>一杯咖啡<small>换</small>一次相遇</h2>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 content-about-grid-left">
+						<img src="images/zixun3.jpg">
+					</div>
+					<div class="col-md-6 content-about-grid-right">
+						<p>
+是谁都希望能认识一些新朋友，但是见到陌生人总有点担心，怕自己不会说话，怕尴尬，怕不知道对方是什么样的人。
+是谁都希望通过一些可靠的途径认识一些新朋友，而不是在网上有一搭没一搭，然后自然而然地结识一些自己想结识的朋友，而不需要有太大的心理压力。
+是谁都希望与新朋友能够在一个干净、安全、不嘈杂的环境下做一番轻松的交流，然后看看有没有共同的话语以便进一步接触，而不是吃个饭、抹下嘴，其实都没怎么好好地聊过。
+是谁都希望——从朋友做起——
+虽然看起来很简单，但是真的很难找到这样的识友活动。
+而现在，我们邀请你来“一杯咖啡”，用一杯咖啡换一次相遇，遇见一些人，然后对TA说，让我们从朋友做起吧。
+
+						</p>
+						<div class="learn">
+							<a href="#">了解更多</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--- content-about ---->
+
+		<!--- content-about ---->
+		<div id="team" class="content-about">
+			<!--- container ---->
+			<div class="container">
+				<div class="content-about-text">
+					<h2>一杯咖啡<small>换</small>一次心灵聚会</h2>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 content-about-grid-right">
+						<p>
+在休闲时光，和一群人彼此交流感兴趣的心灵话题、人生体悟，倾诉与倾听彼此的经历，给予温暖和关爱，当然亦可结识一群走心的朋友。
+活动运用心理咨询师团体咨询技术设计，使专业的团体心理活动，也能通过仅仅花费一杯咖啡的价钱，参与进来。
+主题：情感、亲子、职场跟心理类有关的主题均包括在心灵聚会活动之中。主要活动有：“十问”圆桌谈话,“六人行”,人际互动个人成长小组（公益亚隆模式团体）等等。
+						</p>
+						<div class="learn">
+							<a href="#">了解更多</a>
+						</div>
+					</div>
+					<div class="col-md-6 content-about-grid-left">
+						<img src="images/zixun3.jpg">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--- content-about ---->
+		
+		<!--- content-about ---->
+		<div id="team" class="content-about grey-bg">
+			<!--- container ---->
+			<div class="container">
+				<div class="content-about-text">
+					<h2>心理师成长</h2>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 content-about-grid-left">
+						<img src="images/zixun3.jpg">
+					</div>
+					<div class="col-md-6 content-about-grid-right">
+						<p>
+在休闲时光，和一群人彼此交流感兴趣的心灵话题、人生体悟，倾诉与倾听彼此的经历，给予温暖和关爱，当然亦可结识一群走心的朋友。
+活动运用心理咨询师团体咨询技术设计，使专业的团体心理活动，也能通过仅仅花费一杯咖啡的价钱，参与进来。
+主题：情感、亲子、职场跟心理类有关的主题均包括在心灵聚会活动之中。主要活动有：“十问”圆桌谈话,“六人行”,人际互动个人成长小组（公益亚隆模式团体）等等。
+
+						</p>
+						<div class="learn">
+							<a href="#">了解更多</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--- content-about ---->
+
+		<!--- container ---->
+		<div class="content-about-bottom">
+			<div class="content-services-bottom-text">
+
+				<img src="images/service.png">
+				<p class="bottom-text">Our services will lorem and ipsum your aliquam
+				</p>
+			</div>
+		</div>
+		</div>
+		<!--- content-skills ---->
+		
+
+		<!--- content-portfolio ---->
+		<!--- container ---->
+		<div class="container">
+			<div id="portfolio" class="portfolio">
+				<div class="port-text">
+					<h2>咖啡<small>播报</small></h2>
+					<span class="folio"> </span>
+				</div>
+				<div class="section" id="section-3">
+					
+					<div id="portfoliolist">
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m1.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>弗洛伊德的礼拜天</p>
+								<h3>精神分析读书会第二期第七次笔记</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+
+							</div>
+						</div>
+						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m2.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>《悦己》杂志专访一杯咖啡</p>
+								<h3>用生命影响生命的一群人</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+
+							</div>
+						</div>
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m3.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>咖啡不易喝，咖啡师更难得</p>
+								<h3>面试回顾</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m4.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>时间及文件管理技能</p>
+								<h3>3月26日正能量聚会报名中</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m5.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>一杯咖啡15年社招</p>
+								<h3>我们是家解忧“咖啡馆”</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+									<img src="images/m6.jpg" class="img-responsive" alt="" />
+								</a>
+								<p>一杂志一书一美剧</p>
+								<h3>心理英语学习小组招募中</h3>
+								<div class="tour-caption">
+									<span> </span>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="watchmore">
+							<a href="#">发现更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Script for gallery Here-->
+			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+			<script type="text/javascript">
+				$(function () {
+					var filterList = {
+					init: function () {
+			// MixItUp plugin
+			// http://mixitup.io
+							$('#portfoliolist').mixitup({
+								targetSelector: '.portfolio',
+								filterSelector: '.filter',
+								effects: ['fade'],
+								easing: 'snap',
+							// call the hover effect
+							onMixEnd: filterList.hoverEffect()
+				});				
+			},
+					hoverEffect: function () {
+			// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(
+						function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+						},
+								function () {
+									$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+						}		
+					);				
+				}
+			};
+			// Run the show!
+					filterList.init();
+				});
+			</script>
+			<!--Gallery Script Ends-->
+		</div>
+		<!--- container ---->
+		<!--- content-portfolio ---->
+		<!--- content-Get-in-touch ---->
+		<div id="contact" id="arrow" class="content-Get-in-touch">
+			<!--- container ---->
+			<div class="container">
+				<div class="Get-in-touch-text">
+					<h2>Get <small>in touch</small></h2>
+					<span class="portfolio"> </span>
+				</div>
+				<div class="Get-in-touch-grids">
+					<div class="col-md-6">
+						<form>
+							<input type="text" maxlength="20" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+							<input type="text" maxlength="20" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
+							<textarea value="Your Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message';}"></textarea>
+							<div class="clearfix"></div>
+							<div class="email">
+								<a href="#">Send email</a>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<div class="Get-in-touch-right-grid">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+							</p>
+							<h4> 1600 Pennsylvania Ave NW, Washington, 
+
+							DC 20500, United States of America. 
+
+						</h4>
+							<span>T: (202) 456-1111</span>
+							<small>M: (202) 456-1212</small>
+							<div class="Get-in-touch-icons">
+								<a href="#"><span class="icon1"> </span></a>
+								<a href="#"><span class="icon2"> </span></a>
+								<a href="#"><span class="icon3"> </span></a>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="content-portfolio">
+					<a href="#">
+						<img src="images/ftr.png">
+					</a>
+					<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+					</p>
+				</div>
+			</div>
+			<!--- container ---->
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span>
+		</a>
+		<!--- content-Get-in-touch ---->
+		<div style="display:none">
+			<script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+		</div>
 	</body>
+
 </html>
