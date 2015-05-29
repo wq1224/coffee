@@ -1146,7 +1146,7 @@ h6.b-animate.b-from-left.b-delay03
 .port-text
 {
 	position: relative;
-	margin: 12% 0;
+	margin: 6% 0;
 }
 .port-text h2 
 {
@@ -1163,7 +1163,7 @@ h6.b-animate.b-from-left.b-delay03
 }
 .port-text span.folio
 {
-	background: url(../images/portfoliobg.png);
+	/*background: url(../images/portfoliobg.png);*/
 	position: absolute;
 	width: 369px;
 	height: 114;
@@ -1293,16 +1293,16 @@ h6.b-animate.b-from-left.b-delay03
 	color: #676767;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 2px;
-	font-size: 45px;
+	font-size: 36px;
 }
 .content-Get-in-touch small 
 {
 	color: #9F449B;
-	font-size: 45px;
+	font-size: 36px;
 }
 .content-Get-in-touch span.portfolio
 {
-	background: url(../images/portfoliobg.png);
+	/*background: url(../images/portfoliobg.png);*/
 	position: absolute;
 	width: 369px;
 	height: 114;
@@ -1584,7 +1584,7 @@ font-size: 4em;
 font-size: 17px;
 }
 .port-text {
-margin: 9% 0;
+margin: 6% 0;
 }
 .tour-caption {
 height: 85.17%;
