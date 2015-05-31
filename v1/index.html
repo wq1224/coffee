@@ -17,7 +17,10 @@
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					if($(this).parent().parent().attr("class") == "header-top-grids" ||$(this).parent().parent().parent().attr("class") == "header-bottom-grids"  )
+						$('html,body').animate({scrollTop:($(this.hash).offset().top-$(".top-nav").height())},1000);
+					else
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
 		</script>
@@ -56,16 +59,16 @@
 							<a class="scroll" href="#groupCounsel"><span class="nav-icon"> </span><label>心灵聚会</label></a>
 						</div>
 						<div class="about-nav1">
-							<a class="scroll" href="#grow"><span class="nav-icon1"> </span><label>心灵师成长</label></a>
+							<a class="scroll" href="#grow"><span class="nav-icon1"> </span><label>心理师成长</label></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="col-md-6 right-grid text-right">
 						<div class="about-nav2">
-							<a class="scroll" href="#activity"><span class="nav-icon2"> </span><label>咖啡播报</label></a>
+							<a class="scroll" href="#enter"><span class="nav-icon2"> </span><label>活动报名</label></a>
 						</div>
 						<div class="about-nav3">
-							<a class="scroll" href="#contact"><span class="nav-icon3"> </span><label>联系我们</label></a>
+							<a class="scroll" href="#activity"><span class="nav-icon3"> </span><label>咖啡播报</label></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -100,7 +103,9 @@
 						</li>
 						<li><a class="scroll" href="#groupCounsel">心灵聚会</a>
 						</li>
-						<li><a class="scroll" href="#grow">心灵师成长</a>
+						<li><a class="scroll" href="#grow">心理师成长</a>
+						</li>
+						<li><a class="scroll" href="#enter">活动报名</a>
 						</li>
 						<li><a class="scroll" href="#activity">咖啡播报</a>
 						</li>
@@ -124,9 +129,10 @@
 		<!-- top-nav -->
 		<!-- Sticky Nav --->
 <!--- content ---->
-	<div class="content">
+	<div id="enter" class="content">
 		<!--- container ---->
 		<div class="container">
+			
 			<div class="row">
 				<div class="col-md-3 content-top-grid">					
 						<div class="image-grid">
@@ -291,7 +297,6 @@
 			<div id="activity" class="portfolio">
 				<div class="port-text">
 					<h2>咖啡<small>播报</small></h2>
-					<span class="folio"> </span>
 				</div>
 				<div class="section" id="section-3">
 					
@@ -420,9 +425,8 @@
 		<div id="contact" id="arrow" class="content-Get-in-touch">
 			<!--- container ---->
 			<div class="container">
-				<div class="Get-in-touch-text">
+				<div class="port-text">
 					<h2>联系<small>我们</small></h2>
-					
 				</div>
 				<div class="Get-in-touch-grids">
 					<div class="col-md-6" style="text-align:center">						
