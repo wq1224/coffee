@@ -207,10 +207,10 @@ cursor:pointer;
 	margin-left:10%;
 }
 .about-nav2 label{
-	margin-right:15%;
+	margin-right:0/*15%*/;
 }
 .about-nav3 label{
-	margin-right:3%;
+	margin-right:0/*3%*/;
 }
 .about-nav label:hover a{
 	text-decoration:none;
@@ -228,7 +228,7 @@ cursor:pointer;
 .about-nav2 a{
 padding-top:3em;
 display:inline-block;
-margin-right:26%;
+margin-right:32%;
 }
 .about-nav1{
 	width:180px;
@@ -1975,7 +1975,7 @@ height: 30px;
 background-size: 100%;
 }
 .about-nav span.nav-icon,.about-nav1 span.nav-icon1{
-margin-left:2.5em;
+margin-left:3.2em;
 }
 .about-nav4 a,.about-nav5 a,.about-nav3 a,.about-nav2 a,.about-nav1 a ,.about-nav a{
 margin-left: 0em;
