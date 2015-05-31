@@ -1812,15 +1812,15 @@ margin-left: 17%;
 }
 .top-nav ul li a{
 	padding:0.5em;
-	border-bottom:1px solid #999;
+	/*border-bottom:1px solid #999;*/
 	color:#000;
-	background: rgba(159, 68, 155, 0.24);
+	background: whitesmoke/*rgba(247, 148, 29, 0.15) */;
 	text-align: center;
 }
 .top-nav ul{
 	display:none;
 	background:rgba(255, 255, 255, 0.44);
-	width:95%;
+	margin:0 8%;
 }
 .top-nav span.menu{
 	display: block;
