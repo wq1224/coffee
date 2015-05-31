@@ -367,7 +367,7 @@ margin-right:26%;
 /*--- content ----*/
 .content
 {
-	background:#EEEEEE;
+	background: whitesmoke;
 }
 .row 
 {
@@ -448,7 +448,7 @@ margin-right:26%;
 }
 .content-top-grid p
 {
-	font-size:16px;
+	font-size:14px;
 	font-weight:400;
 	margin-top: 11%;
 	line-height: 28px;
@@ -472,6 +472,9 @@ margin-right:26%;
 	color:#f7941d;
 	font-size:36px;
 }
+/*.content-about{
+	border: solid black 1px;
+}*/
 .content-about span
 {
 	background:url(../images/aboutbg.png);
@@ -818,6 +821,8 @@ height:20px;
 {
 	border-radius:50%;
 	margin: 0 auto;
+	height:190px;
+	width:190px;
 }
 .services-text
 {
@@ -1080,13 +1085,13 @@ text-align: center;
 }
 .portfolio-wrapper h3{
 margin:0;
-font-size: 17px;
+font-size: 14px;
 color: #777777;
 }
 .portfolio-wrapper p{
 color:#222222;
-margin:0;
-font-size:1.6em;
+margin-top:1em;
+font-size:1.2em;
 }
 .portfolio-wrapper:hover div.tour-caption {
 	display: block;
@@ -1145,6 +1150,7 @@ h6.b-animate.b-from-left.b-delay03
 }
 .port-text
 {
+	font-family: 'Microsoft YaHei';
 	position: relative;
 	margin: 6% 0;
 }
@@ -1152,14 +1158,14 @@ h6.b-animate.b-from-left.b-delay03
 {
 	text-align: center;
 	color: #676767;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Microsoft YaHei';
 	letter-spacing: 2px;
-	font-size: 36px;
+	font-size: 32px;
 }
 .port-text small 
 {
 	color: #f7941d;
-	font-size: 36px;
+	font-size: 32px;
 }
 .port-text span.folio
 {
@@ -1291,14 +1297,14 @@ h6.b-animate.b-from-left.b-delay03
 {
 	text-align: center;
 	color: #676767;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'microsoft yahei';
 	letter-spacing: 2px;
-	font-size: 36px;
+	font-size: 32px;
 }
 .content-Get-in-touch small 
 {
-	color: #9F449B;
-	font-size: 36px;
+	color: #f7941d;
+	font-size: 32px;
 }
 .content-Get-in-touch span.portfolio
 {
