@@ -2008,6 +2008,11 @@ width: 100px;
 height: 100px;
 background-size: 100%;
 }
+.content-top-grid img {
+width: 100px;
+height: 100px;
+background-size: 100%;
+}
 .content-top-grid h3{
 margin-top: 3%;
 font-size: 0.9em;
